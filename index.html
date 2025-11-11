@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!-- Head contains the information (brain) of the website -->
+    <meta charset="UTF-8">  <!--Character display (what can be displayed emojis, non english letters, chars)-->
+    <!-- This makes it to scale properly on phones,tablets, etc-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title> <!--Title that is shown on the browser-->
+    <link rel="stylesheet" href="style.css"> <!--Connects css file to html file to style it-->
+</head>
+<body> <!-- the body is what you actually see on the website -->
+    <div class="container">
+        <div class="screen active" id="start-screen">
+            <h1>Quiz Time!</h1><!-- header (1-Largest to 6-Smallest)-->
+            <p>Test your knowledge with these fun questions</p> <!-- paragraph -->
+            <button id="start-btn">Start Quiz</buttom>
+        </div>
+        <div class="screen" id="quiz-screen">
+            <div class="quiz-header">
+                <h2 id="question-text">Question goes here</h2>
+                <div class="quiz-info">
+                    <p>
+                        Question <span id="current-question">1</span> of <span>
+                            
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
