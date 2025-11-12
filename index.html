@@ -18,15 +18,33 @@
             <div class="quiz-header">
                 <h2 id="question-text">Question goes here</h2>
                 <!-- this is a test for practice git-->
-                 <p>THIS IS A TEST FOR GIT</p>
+                 <!--<p>THIS IS A TEST FOR GIT</p>-->
                 <div class="quiz-info">
+                    <p> <!-- small inline container (span for dynamic change in values)-->
+                        Question <span id="current-question">1</span> of <span>5</span>
+                    </p>
                     <p>
-                        Question <span id="current-question">1</span> of <span>
-                            
-                        </span>
+                        score: <span id="score">0</span>
                     </p>
                 </div>
+            </div> <!-- id: targets one specific element, class: target group of elements similar-->
+                   <!-- ids and classes dont need to be used at same time for divs or none at all-->
+            <div id = "answers-container" class ="answers-container">
+                <!-- answer buttons will be inserted here from our js code
+                 later at some point-->
             </div>
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+        </div>
+        <div id="result-screen" class="screen active">
+            <h1>Quiz Results</h1>
+            <div class="result-info">
+                <p>You scored <span id="final-score">0</span> out of<span id="max-score">
+                </span></p>
+                <div id="result-message">Good job!</div>
+            </div>
+            <button id="restart-btn">Restart Quiz</button>
         </div>
     </div>
 </body>
