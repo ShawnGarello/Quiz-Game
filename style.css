@@ -5,13 +5,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* can target elements through, classes, ids or tags */
 body{
-    background: #f5efe6;
-    display: flex;
+    background: #f5efe6; /* Sets entire page background color*/
+    display: flex; /* helps modify the children of body (alignment,centering,etc)*/
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; /*defining a height so flex box can center */
     padding: 1rem;
     font-family: sans-serif;
 }
